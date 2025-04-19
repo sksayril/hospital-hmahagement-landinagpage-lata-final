@@ -1,6 +1,6 @@
 import { Hospital, Doctor, SlotResponse, BookingData, DoctorResponse } from '../types';
 
-const API_BASE_URL = 'https://7cvccltb-3100.inc1.devtunnels.ms/api';
+const API_BASE_URL = 'http://localhost:3100/api';
 
 export const getAllHospitals = async (): Promise<Hospital[]> => {
   try {
