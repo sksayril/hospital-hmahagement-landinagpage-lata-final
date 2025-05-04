@@ -36,7 +36,7 @@ const ChatBot: React.FC = () => {
     try {
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
       
-      const prompt = `You are Minmo, a friendly healthcare assistant. Keep your responses focused on healthcare and limited to 50-100 words. Current user message: ${userMessage}`;
+      const prompt = `You are Minmo, a friendly healthcare assistant. answewrs based on the uiser langauage Keep your responses focused on healthcare and limited to 50-100 words. Current user message: ${userMessage}`;
       
       const result = await model.generateContent(prompt);
       const response = await result.response;
